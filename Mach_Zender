@@ -4,8 +4,7 @@ from qiskit.visualization import plot_bloch_multivector, plot_histogram
 from qiskit_textbook.tools import array_to_latex
 import matplotlib.pyplot as plt
 
-for i in range(100):
-    print()
+print()
     
 print('''1: Beam splitter 1 e rilevatori
 2: Beam splitter 1 + specchi e rilevatori
@@ -49,8 +48,7 @@ while True:
     qc.draw()
     print(qc)
     
-    for i in range(20):
-        print()
+    print()
     
     svsim = Aer.get_backend('statevector_simulator')
     qobj = assemble(qc)
